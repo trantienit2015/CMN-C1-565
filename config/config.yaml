@@ -1,0 +1,9 @@
+# Runtime parameters loaded by AgentRegistry and passed as Graph(config=...).
+# Static manifest fields (name/version/class/requires) live in agent.yaml.
+
+max_retry: 3
+timeout_s: 30
+top_k: 5
+# Local OpenMemory client and curated notes source; injected by the caller.
+memory_client: null
+snapshot_kb: null

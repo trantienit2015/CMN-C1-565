@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: CMN-C1-565
+name: Enterprise AI Agent Local Memory & Context Persistence Q&A (OpenMemory pattern)
+namespace: cmn
+version: 0.1.0
+enabled: true
+description: Enterprise AI Agent Local Memory & Context Persistence Q&A (OpenMemory pattern)
+class: src.graph.graph.Graph
+category: Cat 1
+industry: CMN
+base_type: VectorRAGAgent
+generation_mode: deterministic
+required_trust_level: ANONYMOUS
+requires:
+  secrets: []
+  extras: []
